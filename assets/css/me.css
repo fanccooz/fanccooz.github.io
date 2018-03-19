@@ -38,6 +38,7 @@ ul, ol {
 
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 a:hover {
@@ -806,10 +807,10 @@ header {
 }
 
 .job-skills-circle.custom-fade {
-  -webkit-animation: custom-fade 0.5s forwards; /* Safari and Chrome */
-  -moz-animation: custom-fade 0.5s forwards; /* Firefox */
-  -o-animation: custom-fade 0.5s forwards; /* Opera */
-  animation: custom-fade 0.5s forwards;
+  -webkit-animation: custom-fade 0.8s forwards; /* Safari and Chrome */
+  -moz-animation: custom-fade 0.8s forwards; /* Firefox */
+  -o-animation: custom-fade 0.8s forwards; /* Opera */
+  animation: custom-fade 0.8s forwards;
 }
 
 .circle-line-solid {
@@ -1463,7 +1464,14 @@ header {
 
 .floating {
   position: relative;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
   transform: translateY(0);
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
   position: relative;
   z-index: 10;
@@ -1485,15 +1493,21 @@ header {
   box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
 }
 
 .floating.custom-fade {
-  -webkit-animation: custom-fade 0.5s forwards; /* Safari and Chrome */
-  -moz-animation: custom-fade 0.5s forwards; /* Firefox */
-  -o-animation: custom-fade 0.5s forwards; /* Opera */
-  animation: custom-fade 0.5s forwards;
+  -webkit-animation: custom-fade 0.8s forwards; /* Safari and Chrome */
+  -moz-animation: custom-fade 0.8s forwards; /* Firefox */
+  -o-animation: custom-fade 0.8s forwards; /* Opera */
+  animation: custom-fade 0.8s forwards;
 }
 
 @-webkit-keyframes custom-fade {

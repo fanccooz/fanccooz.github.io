@@ -36,13 +36,13 @@ $(window).scroll(function () {
     $(titleDd[2]).find('p').addClass('experience-show');
   }
   //工作技能
-  if ($(window).scrollTop() >= 900 && $(window).scrollTop() < 1600) {
+  if ($(window).scrollTop() >= 1000 && $(window).scrollTop() < 1600) {
     $('.center').addClass('bg-animation');
     $('.c100').addClass('bg-animation');
     $('.job-skills-circle').addClass('custom-fade');
   }
   //作品
-  if ($(window).scrollTop() >= 1700 && $(window).scrollTop() < 2400) {
+  if ($(window).scrollTop() >= 1900 && $(window).scrollTop() < 2400) {
     $('.floating').addClass('custom-fade');
     $('.floating').prev('h3').addClass('custom-fade');
   }
