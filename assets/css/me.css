@@ -74,12 +74,17 @@ table {
   box-sizing: border-box;
 }
 
+i {
+  font-style: normal;
+}
+
 /*共用*/
 .wrapper {
   max-width: 980px;
   margin: 0 auto;
   background-color: #2f2d30;
   position: relative;
+  overflow: hidden;
 }
 
 /*end*/
@@ -126,7 +131,6 @@ header {
   color: #ffffff;
   height: 300px;
   padding: 30px 20px;
-  z-index: 0;
 }
 
 .header-text:before {
@@ -232,6 +236,32 @@ header {
 .introduction td img {
   height: 28px;
 }
+.basic-information-btn {
+  opacity: 0;
+  position: absolute;
+  right: 30%;
+  width: 100px;
+  top: 35%;
+  margin: auto;
+  display: inline-block;
+  padding: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.basic-information-close {
+  font-size: 30px;
+  position: absolute;
+  top:-5px;
+  right: 0;
+  opacity: 0;
+}
 
 /*主体内容*/
 .content {
@@ -241,6 +271,7 @@ header {
 .work-experience {
   position: relative;
   top: -110px;
+  z-index: 5;
 }
 
 @-webkit-keyframes experience-show {
@@ -347,7 +378,7 @@ header {
 /*背景div变形*/
 .bg-div {
   position: absolute;
-  top: 340px;
+  top: 890px;
   width: 100%;
 }
 
@@ -1555,7 +1586,7 @@ header {
 
 #comparison figure {
   background-image: url(../img/case-show/dsp.jpg);
-  background-size: 544px 306px;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   font-size: 0;
@@ -1665,7 +1696,7 @@ input[type=range]:focus::-moz-range-thumb {
 /*--物联网云平台---*/
 .cont {
   position: relative;
-  width: 980px;
+  width: 100%;
   height: 537px;
   overflow: hidden;
 }
@@ -1894,8 +1925,8 @@ input[type=range]:focus::-moz-range-thumb {
 }
 .icon-link-twitter img.hand {
   width: 35px;
-  right: 100px;
-  bottom: 70px;
+  right: 30%;
+  bottom: 30%;
 }
 
 .icon-show {
@@ -2026,7 +2057,7 @@ input[type=range]:focus::-moz-range-thumb {
 
 /*尾部*/
 footer {
-  padding: 50px 0;
+  margin: 40px 0;
   text-align: center;
 }
 
@@ -2038,4 +2069,168 @@ footer ul li {
   margin: 0 15px;
   text-align: center;
   display: inline-block;
+}
+
+/*----响应式---*/
+@media (max-width: 768px) {
+  /*基本信息*/
+  .basic-information-btn{
+    opacity: 0;
+  }
+  .basic-information-close {
+    opacity: 1;
+  }
+  #header-bg .basic-information-btn.active {
+    -webkit-animation: information-show 1s forwards; /* Safari and Chrome */
+    -moz-animation: information-show 1s forwards; /* Firefox */
+    -o-animation: information-show 1s forwards; /* Opera */
+    animation: information-show 1s forwards;
+    z-index: 10;
+  }
+  .introduction.active {
+    -webkit-animation: experience-show 1s forwards; /* Safari and Chrome */
+    -moz-animation: experience-show 1s forwards; /* Firefox */
+    -o-animation: experience-show 1s forwards; /* Opera */
+    animation: experience-show 1s forwards;
+    z-index: 10;
+  }
+  .introduction {
+    margin: 0;
+    width: 110%;
+    height: auto;
+    padding-left: 30px;
+    background-color: rgba(0,0,0,1);
+    opacity: 0;
+    top:250px;
+  }
+  @-webkit-keyframes information-show {
+    to {
+      opacity: 1;
+      top: 150px;
+    }
+  }
+
+  @-moz-keyframes information-show {
+    to {
+      opacity: 1;
+      top: 150px;
+    }
+  }
+
+  @-o-keyframes information-show {
+    to {
+      opacity: 1;
+      top: 150px;
+    }
+  }
+
+  @-ms-keyframes information-show {
+    to {
+      opacity: 1;
+      top: 150px;
+    }
+  }
+
+  @keyframes information-show {
+    to {
+      opacity: 1;
+      top: 150px;
+    }
+  }
+  /*主题内容*/
+  .works h2,.works h3 {
+    font-size: 2rem;
+  }
+  .works h2 {
+    padding: 20px 0 30px;
+  }
+  .works h3 {
+    padding: 20px;
+  }
+  /*工作经历*/
+  .work-experience {
+    top:-80px;
+  }
+  .work-experience dl dt {
+    width: 70%;
+  }
+  .work-experience dl dt.right {
+    margin-left: 30%;
+  }
+  .work-experience dl dd.right {
+    margin-left: 0;
+  }
+  .work-experience dl dd {
+    border: none;
+    width: 100%;
+    text-align: left;
+    background-color: rgba(0,0,0,0.2);
+    padding: 30px;
+  }
+  /*职业技能*/
+  .job-skills {
+    margin-top: -140px;
+  }
+  .job-skills-circle {
+    overflow-x: auto;
+    padding-top: 50px;
+  }
+  /*作品*/
+  #comparison {
+    width: 80%;
+    height: 100%;
+    position: relative;
+  }
+  .floating {
+    height: 550px;
+    margin-bottom: 0;
+  }
+  .floating::after {
+    bottom: 110px;
+  }
+  .mac-img {
+    width: 90%;
+  }
+  .cont {
+    height: 300px;
+  }
+  .slide-text {
+    font-size: 1rem;
+  }
+  .icon-link-twitter {
+    width: 30%;
+  }
+}
+@media (max-width: 414px) {
+  /*基础信息*/
+  .basic-information-btn {
+    right: 30px;
+  }
+  /*工作经历*/
+  .work-experience {
+    top:-80px;
+  }
+  /*作品*/
+  #comparison {
+    top:-20px;
+  }
+  .floating {
+    height: 384px;
+  }
+  .floating::after {
+    bottom: 110px;
+  }
+}
+@media (max-width: 380px) {
+  /*基本信息*/
+  .basic-information-btn {
+    right: 10px;
+  }
+  /*作品*/
+  .floating {
+    height: 364px;
+  }
+  .floating::after {
+    bottom: 130px;
+  }
 }

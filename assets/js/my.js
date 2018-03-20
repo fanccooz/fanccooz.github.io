@@ -56,3 +56,14 @@ $('.circle-line-solid .circle').mouseover(function () {
 $('#comparison input[type=range]').mousedown(function () {
   $('.case-img .hand').hide();
 })
+
+//移动端基本信息操作
+$('#basic-information-close').on('click', function () {
+  $('.introduction').removeClass('active')
+  $('#basic-information-btn').addClass('active');
+})
+$('#basic-information-btn').on('click', function () {
+  console.log('cccccc')
+  $('.introduction').addClass('active')
+  $('#basic-information-btn').removeClass('active');
+})
