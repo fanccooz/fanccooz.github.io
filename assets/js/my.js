@@ -54,7 +54,7 @@ $('.circle-line-solid .circle').mouseover(function () {
   $('.circle-line-solid .hand').hide();
 })
 $('#comparison input[type=range]').mousedown(function () {
-  $('.case-img .hand').hide();
+  $('#comparison .hand').hide();
 })
 
 //移动端基本信息操作
