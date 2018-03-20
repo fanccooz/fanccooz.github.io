@@ -1690,7 +1690,7 @@ input[type=range]:focus::-moz-range-thumb {
 
 #comparison .hand {
   bottom: 200px;
-  left: 280px;
+  left: 30%;
 }
 
 /*--物联网云平台---*/
@@ -2180,6 +2180,9 @@ footer ul li {
     width: 80%;
     height: 100%;
     position: relative;
+  }
+  #comparison .hand {
+    bottom: 0px;
   }
   .floating {
     height: 550px;
