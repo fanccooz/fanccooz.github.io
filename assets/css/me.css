@@ -236,6 +236,7 @@ header {
 .introduction td img {
   height: 28px;
 }
+
 .basic-information-btn {
   opacity: 0;
   position: absolute;
@@ -255,10 +256,11 @@ header {
   -o-transition: all 1s;
   transition: all 1s;
 }
+
 .basic-information-close {
   font-size: 30px;
   position: absolute;
-  top:-5px;
+  top: -5px;
   right: 0;
   opacity: 0;
 }
@@ -329,7 +331,7 @@ header {
   font-size: 20px;
 }
 
-.work-experience dl dt p,.work-experience dl p em {
+.work-experience dl dt p, .work-experience dl p em {
   color: #fba073;
 }
 
@@ -435,56 +437,56 @@ header {
 
 @-webkit-keyframes hand {
   0% {
-  transform:scale(.9);
+    transform: scale(.9);
   }
   70% {
-  transform:scale(1);
+    transform: scale(1);
     box-shadow: 0 0 0 50px rgba(229, 229, 229, 0);
   }
   100% {
-  transform:scale(.9);
+    transform: scale(.9);
     box-shadow: 0 0 0 0 rgba(229, 229, 229, 0);
   }
 }
 
 @-moz-keyframes hand {
   0% {
-  transform:scale(.9);
+    transform: scale(.9);
   }
   70% {
-  transform:scale(1);
+    transform: scale(1);
     box-shadow: 0 0 0 50px rgba(229, 229, 229, 0);
   }
   100% {
-  transform:scale(.9);
+    transform: scale(.9);
     box-shadow: 0 0 0 0 rgba(229, 229, 229, 0);
   }
 }
 
 @-o-keyframes hand {
   0% {
-  transform:scale(.9);
+    transform: scale(.9);
   }
   70% {
-  transform:scale(1);
+    transform: scale(1);
     box-shadow: 0 0 0 50px rgba(229, 229, 229, 0);
   }
   100% {
-  transform:scale(.9);
+    transform: scale(.9);
     box-shadow: 0 0 0 0 rgba(229, 229, 229, 0);
   }
 }
 
 @keyframes hand {
   0% {
-  transform:scale(.9);
+    transform: scale(.9);
   }
   70% {
-  transform:scale(1);
+    transform: scale(1);
     box-shadow: 0 0 0 50px rgba(229, 229, 229, 0);
   }
   100% {
-  transform:scale(.9);
+    transform: scale(.9);
     box-shadow: 0 0 0 0 rgba(229, 229, 229, 0);
   }
 }
@@ -1856,7 +1858,7 @@ input[type=range]:focus::-moz-range-thumb {
   transition: 750ms;
   opacity: 0;
   z-index: 1;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 10px;
 }
 
@@ -1923,6 +1925,7 @@ input[type=range]:focus::-moz-range-thumb {
 .icon-link-twitter img {
   width: 100%;
 }
+
 .icon-link-twitter img.hand {
   width: 35px;
   right: 30%;
@@ -2074,12 +2077,14 @@ footer ul li {
 /*----响应式---*/
 @media (max-width: 768px) {
   /*基本信息*/
-  .basic-information-btn{
+  .basic-information-btn {
     opacity: 0;
   }
+
   .basic-information-close {
     opacity: 1;
   }
+
   #header-bg .basic-information-btn.active {
     -webkit-animation: information-show 1s forwards; /* Safari and Chrome */
     -moz-animation: information-show 1s forwards; /* Firefox */
@@ -2087,6 +2092,7 @@ footer ul li {
     animation: information-show 1s forwards;
     z-index: 10;
   }
+
   .introduction.active {
     -webkit-animation: experience-show 1s forwards; /* Safari and Chrome */
     -moz-animation: experience-show 1s forwards; /* Firefox */
@@ -2094,15 +2100,17 @@ footer ul li {
     animation: experience-show 1s forwards;
     z-index: 10;
   }
+
   .introduction {
     margin: 0;
     width: 110%;
     height: auto;
     padding-left: 30px;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 1);
     opacity: 0;
-    top:250px;
+    top: 250px;
   }
+
   @-webkit-keyframes information-show {
     to {
       opacity: 1;
@@ -2138,101 +2146,126 @@ footer ul li {
     }
   }
   /*主题内容*/
-  .works h2,.works h3 {
+  .works h2, .works h3 {
     font-size: 2rem;
   }
+
   .works h2 {
     padding: 20px 0 30px;
   }
+
   .works h3 {
     padding: 20px;
   }
+
   /*工作经历*/
   .work-experience {
-    top:-80px;
+    top: -80px;
   }
+
   .work-experience dl dt {
     width: 70%;
   }
+
   .work-experience dl dt.right {
     margin-left: 30%;
   }
+
   .work-experience dl dd.right {
     margin-left: 0;
   }
+
   .work-experience dl dd {
     border: none;
     width: 100%;
     text-align: left;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 30px;
   }
+
   /*职业技能*/
   .job-skills {
     margin-top: -140px;
   }
+
   .job-skills-circle {
     overflow-x: auto;
     padding-top: 50px;
   }
+
   /*作品*/
   #comparison {
     width: 80%;
     height: 100%;
     position: relative;
   }
+
   #comparison .hand {
     bottom: 0px;
   }
+
   .floating {
     height: 550px;
     margin-bottom: 0;
   }
+
   .floating::after {
     bottom: 110px;
   }
+
   .mac-img {
     width: 90%;
   }
+
   .cont {
     height: 300px;
   }
+
   .slide-text {
     font-size: 1rem;
   }
+
   .icon-link-twitter {
     width: 30%;
   }
 }
+
 @media (max-width: 414px) {
   /*基础信息*/
   .basic-information-btn {
     right: 30px;
   }
+
   /*工作经历*/
   .work-experience {
-    top:-80px;
+    top: -80px;
   }
+
   /*作品*/
   #comparison {
-    top:-20px;
+    top: -20px;
   }
+
   .floating {
     height: 384px;
   }
+
   .floating::after {
     bottom: 110px;
   }
 }
+
 @media (max-width: 380px) {
   /*基本信息*/
   .basic-information-btn {
     right: 10px;
   }
+
   /*作品*/
   .floating {
     height: 364px;
   }
+
   .floating::after {
     bottom: 130px;
   }
