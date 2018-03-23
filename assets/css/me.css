@@ -435,56 +435,56 @@ header {
 
 @-webkit-keyframes hand {
   0% {
-  transform(scale(.9));
+  transform:scale(.9);
   }
   70% {
-  transform(scale(1));
+  transform:scale(1);
     box-shadow: 0 0 0 50px rgba(229, 229, 229, 0);
   }
   100% {
-  transform(scale(.9));
+  transform:scale(.9);
     box-shadow: 0 0 0 0 rgba(229, 229, 229, 0);
   }
 }
 
 @-moz-keyframes hand {
   0% {
-  transform(scale(.9));
+  transform:scale(.9);
   }
   70% {
-  transform(scale(1));
+  transform:scale(1);
     box-shadow: 0 0 0 50px rgba(229, 229, 229, 0);
   }
   100% {
-  transform(scale(.9));
+  transform:scale(.9);
     box-shadow: 0 0 0 0 rgba(229, 229, 229, 0);
   }
 }
 
 @-o-keyframes hand {
   0% {
-  transform(scale(.9));
+  transform:scale(.9);
   }
   70% {
-  transform(scale(1));
+  transform:scale(1);
     box-shadow: 0 0 0 50px rgba(229, 229, 229, 0);
   }
   100% {
-  transform(scale(.9));
+  transform:scale(.9);
     box-shadow: 0 0 0 0 rgba(229, 229, 229, 0);
   }
 }
 
 @keyframes hand {
   0% {
-  transform(scale(.9));
+  transform:scale(.9);
   }
   70% {
-  transform(scale(1));
+  transform:scale(1);
     box-shadow: 0 0 0 50px rgba(229, 229, 229, 0);
   }
   100% {
-  transform(scale(.9));
+  transform:scale(.9);
     box-shadow: 0 0 0 0 rgba(229, 229, 229, 0);
   }
 }
