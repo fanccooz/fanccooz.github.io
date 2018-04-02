@@ -348,6 +348,8 @@ function cloudImgShow() {
       let _this = $(this);
       let target = +_this.attr('data-target');
 
+      $closeBtn.removeClass('show-close');
+
       _this.css({
         'transform': 'translate3d(-' + (100 / numSlides * (numSlides - (target - 1)) + 5) + '%, 0, 0)',
         'transition': '750ms'
@@ -394,6 +396,9 @@ function cloudImgShow() {
       if (initialAnim || clickAnim) return;
       let _this = $(this);
       let target = +_this.attr('data-target');
+
+
+      $closeBtn.removeClass('show-close');
 
       for (let i = 1, length = $slide.length; i <= length; i++) {
         $('.slide-' + i).css({
